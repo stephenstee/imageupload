@@ -1,0 +1,16 @@
+<%- include("partials/header")%>
+<a href="/home/<%=image._id%>/edit">Edit</a>
+<form action = "/home/<%=image._id%>?_method=DELETE" method="POST">
+	<button class="btn btn-danger">
+		DELETE
+	</button>
+</form>
+<hr>
+	<%= image.name%>
+</h2>
+<img src="<%=image.image%>">
+<h3>
+	<%= image.description%>
+</h3>
+
+<%- include("partials/footer")%>
